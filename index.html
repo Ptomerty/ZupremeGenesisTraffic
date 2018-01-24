@@ -66,7 +66,7 @@
                      ctx.lineWidth = 2;
                      ctx.strokeStyle = 'white';
                //CAR
-                 img.src = "https://image.ibb.co/gJpy6b/back.png";
+                 img.src = "back.png";
                }
                var img = new Image();
                  img.onload = function() {
@@ -74,7 +74,7 @@
                var car = new Image();
                car.style.height = '10px';
                car.style.width = '10px';
-               car.src = "https://image.ibb.co/kWkuew/car.png";
+               car.src = "car-top-view.png";
                car.onload = function () {
                  
                };
@@ -121,8 +121,8 @@
                  timer = 0;
                  getValues();
                document.getElementById("redText").innerHTML = "Red Time (seconds): " + Math.round(100 * calculateRed()) / 100;
-                -                 document.getElementById("greenText").innerHTML = "Green Time (seconds): " + Math.round(100 * calculateGreen()) / 100;
-                -                 document.getElementById("yellowText").innerHTML = "Yellow Time (seconds): " + Math.round(100 * calculateYellow()) / 100;
+               document.getElementById("greenText").innerHTML = "Green Time (seconds): " + Math.round(100 * calculateGreen()) / 100;
+               document.getElementById("yellowText").innerHTML = "Yellow Time (seconds): " + Math.round(100 * calculateYellow()) / 100;
                
                  redTime = calculateRed() * 700;
                  greenTime = calculateGreen() * 700;
